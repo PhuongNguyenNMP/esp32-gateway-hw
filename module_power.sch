@@ -1,0 +1,765 @@
+EESchema Schematic File Version 2
+LIBS:esp32-gateway-hw-rescue
+LIBS:power
+LIBS:device
+LIBS:transistors
+LIBS:conn
+LIBS:linear
+LIBS:regul
+LIBS:74xx
+LIBS:cmos4000
+LIBS:adc-dac
+LIBS:memory
+LIBS:xilinx
+LIBS:microcontrollers
+LIBS:dsp
+LIBS:microchip
+LIBS:analog_switches
+LIBS:motorola
+LIBS:texas
+LIBS:intel
+LIBS:audio
+LIBS:interface
+LIBS:digital-audio
+LIBS:philips
+LIBS:display
+LIBS:cypress
+LIBS:siliconi
+LIBS:opto
+LIBS:atmel
+LIBS:contrib
+LIBS:valves
+LIBS:esp32-wrover-v3
+LIBS:Symbols_DCDC-ACDC-Converter_RevC_20Jul2012
+LIBS:Symbols_EN60617_13Mar2013
+LIBS:Symbols_EN60617-10_HF-Radio_DRAFT_12Sep2013
+LIBS:Symbols_ICs-Diskrete_RevD10
+LIBS:Symbols_ICs-Opto_RevB_16Sep2013
+LIBS:Symbols_Microcontroller_Philips-NXP_RevA_06Oct2013
+LIBS:SymbolsSimilarEN60617+oldDIN617-RevE8
+LIBS:Symbols_Socket-DIN41612_RevA
+LIBS:Symbols_Transformer-Diskrete_RevA
+LIBS:74xgxx
+LIBS:ac-dc
+LIBS:actel
+LIBS:allegro
+LIBS:Altera
+LIBS:analog_devices
+LIBS:battery_management
+LIBS:bbd
+LIBS:bosch
+LIBS:brooktre
+LIBS:cmos_ieee
+LIBS:dc-dc
+LIBS:diode
+LIBS:elec-unifil
+LIBS:ESD_Protection
+LIBS:ftdi
+LIBS:gennum
+LIBS:graphic_symbols
+LIBS:hc11
+LIBS:infineon
+LIBS:intersil
+LIBS:ir
+LIBS:Lattice
+LIBS:leds
+LIBS:LEM
+LIBS:logic_programmable
+LIBS:maxim
+LIBS:mechanical
+LIBS:microchip_dspic33dsc
+LIBS:microchip_pic10mcu
+LIBS:microchip_pic12mcu
+LIBS:microchip_pic16mcu
+LIBS:microchip_pic18mcu
+LIBS:microchip_pic24mcu
+LIBS:microchip_pic32mcu
+LIBS:modules
+LIBS:motor_drivers
+LIBS:motors
+LIBS:msp430
+LIBS:nordicsemi
+LIBS:nxp
+LIBS:nxp_armmcu
+LIBS:onsemi
+LIBS:Oscillators
+LIBS:powerint
+LIBS:Power_Management
+LIBS:pspice
+LIBS:references
+LIBS:relays
+LIBS:rfcom
+LIBS:RFSolutions
+LIBS:sensors
+LIBS:silabs
+LIBS:stm8
+LIBS:stm32
+LIBS:supertex
+LIBS:switches
+LIBS:transf
+LIBS:triac_thyristor
+LIBS:ttl_ieee
+LIBS:video
+LIBS:wiznet
+LIBS:Worldsemi
+LIBS:Xicor
+LIBS:zetex
+LIBS:Zilog
+LIBS:CP2102
+LIBS:ESP8266
+LIBS:esp-uno
+LIBS:esp-wroom-32
+LIBS:microsd_socket
+LIBS:microsd_spi_cd
+LIBS:MOSFET-N
+LIBS:MOSFET-P
+LIBS:open-project
+LIBS:tc1264
+LIBS:tom_kicad
+LIBS:usb-b
+LIBS:usb_mini_b
+LIBS:w_device
+LIBS:lm2596
+LIBS:mcp73831
+LIBS:OPL-Inductor
+LIBS:neo-6m
+LIBS:Sim800c
+LIBS:sp1001
+LIBS:esp32-gateway-hw-cache
+EELAYER 25 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 4 4
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+Wire Notes Line
+	11350 10550 11350 10500
+$Comp
+L LM2596 U4
+U 1 1 59DC7603
+P 2550 2950
+F 0 "U4" H 2550 3050 60  0000 C CNN
+F 1 "LM2596" H 2550 3200 60  0000 C CNN
+F 2 "TO_SOT_Packages_SMD:TO-252-5_TabPin6" H 2550 2850 60  0001 C CNN
+F 3 "" H 2550 2850 60  0000 C CNN
+	1    2550 2950
+	1    0    0    -1  
+$EndComp
+$Comp
+L CONN_01X02 P3
+U 1 1 59DC7604
+P 1100 2800
+F 0 "P3" H 1100 2950 50  0000 C CNN
+F 1 "12V_IN" V 1200 2800 50  0000 C CNN
+F 2 "Pin_Headers:Pin_Header_Angled_1x02_Pitch1.27mm" H 1100 2800 50  0001 C CNN
+F 3 "" H 1100 2800 50  0000 C CNN
+	1    1100 2800
+	-1   0    0    1   
+$EndComp
+$Comp
+L CP C13
+U 1 1 59DC7605
+P 1600 2850
+F 0 "C13" H 1625 2950 50  0000 L CNN
+F 1 "680uF" H 1625 2750 50  0000 L CNN
+F 2 "Capacitors_THT:CP_Radial_D10.0mm_P5.00mm" H 1638 2700 50  0001 C CNN
+F 3 "" H 1600 2850 50  0000 C CNN
+	1    1600 2850
+	1    0    0    -1  
+$EndComp
+$Comp
+L D_Schottky_Small D5
+U 1 1 59DC7606
+P 1500 2450
+F 0 "D5" H 1450 2530 50  0000 L CNN
+F 1 "D_Schottky_Small" H 1220 2370 50  0000 L CNN
+F 2 "Diodes_SMD:D_0603" V 1500 2450 50  0001 C CNN
+F 3 "" V 1500 2450 50  0000 C CNN
+	1    1500 2450
+	-1   0    0    1   
+$EndComp
+$Comp
+L SMD-INDUCTOR-200UH-20%(2P-5X5MM) L2
+U 1 1 59DC7607
+P 3950 2850
+F 0 "L2" H 3850 2900 50  0000 L BNN
+F 1 "33uH" H 3850 2750 50  0000 L BNN
+F 2 "Inductors_SMD:L_0603" H 3950 3000 50  0001 C CNN
+F 3 "" H 3950 2850 60  0000 C CNN
+F 4 "303010140" H 3950 2850 60  0001 C CNN "Desc"
+F 5 "NIL" H 3950 2850 60  0001 C CNN "MFG NO"
+F 6 "NIL" H 3950 2850 60  0001 C CNN "MFR"
+F 7 "NIL" H 3950 2850 60  0001 C CNN "Notes"
+	1    3950 2850
+	1    0    0    -1  
+$EndComp
+$Comp
+L D_Schottky_Small D6
+U 1 1 59DC7608
+P 3500 2600
+F 0 "D6" H 3450 2680 50  0000 L CNN
+F 1 "D_Schottky_Small" H 3220 2520 50  0000 L CNN
+F 2 "Diodes_SMD:D_0603" V 3500 2600 50  0001 C CNN
+F 3 "" V 3500 2600 50  0000 C CNN
+	1    3500 2600
+	0    -1   -1   0   
+$EndComp
+$Comp
+L CP 220uF1
+U 1 1 59DC7609
+P 4300 2700
+F 0 "220uF1" H 4325 2800 50  0000 L CNN
+F 1 "CP" H 4325 2600 50  0000 L CNN
+F 2 "Capacitors_THT:CP_Radial_D10.0mm_P5.00mm" H 4338 2550 50  0001 C CNN
+F 3 "" H 4300 2700 50  0000 C CNN
+	1    4300 2700
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	1300 2750 1300 2450
+Wire Wire Line
+	1300 2450 1400 2450
+Wire Wire Line
+	1600 2450 1600 2700
+Wire Wire Line
+	1300 2850 1300 3000
+Wire Wire Line
+	1300 3000 1600 3000
+Wire Wire Line
+	1450 3000 1450 3100
+Connection ~ 1450 3000
+Wire Wire Line
+	3300 2850 3750 2850
+Connection ~ 3500 2850
+$Comp
+L TC1264 U5
+U 1 1 59DC760A
+P 4200 4100
+F 0 "U5" H 4200 4500 60  0000 C CNN
+F 1 "TC1264" H 4200 4100 60  0000 C CNN
+F 2 "TO_SOT_Packages_SMD:TO-263-3_TabPin2" H 4200 4100 60  0001 C CNN
+F 3 "" H 4200 4100 60  0001 C CNN
+	1    4200 4100
+	1    0    0    -1  
+$EndComp
+$Comp
+L C C14
+U 1 1 59DC760B
+P 3500 4200
+F 0 "C14" H 3525 4300 50  0000 L CNN
+F 1 "1uF" H 3525 4100 50  0000 L CNN
+F 2 "footprint:C_0603" H 3538 4050 50  0001 C CNN
+F 3 "" H 3500 4200 50  0000 C CNN
+	1    3500 4200
+	1    0    0    -1  
+$EndComp
+$Comp
+L C C15
+U 1 1 59DC760C
+P 4800 4250
+F 0 "C15" H 4825 4350 50  0000 L CNN
+F 1 "1uF" H 4825 4150 50  0000 L CNN
+F 2 "footprint:C_0603" H 4838 4100 50  0001 C CNN
+F 3 "" H 4800 4250 50  0000 C CNN
+	1    4800 4250
+	1    0    0    -1  
+$EndComp
+$Comp
+L R R26
+U 1 1 59DC760D
+P 5150 4200
+F 0 "R26" V 5230 4200 50  0000 C CNN
+F 1 "470R" V 5050 4200 50  0000 C CNN
+F 2 "footprint:R_0603" V 5080 4200 50  0001 C CNN
+F 3 "" H 5150 4200 50  0000 C CNN
+	1    5150 4200
+	1    0    0    -1  
+$EndComp
+$Comp
+L LED D7
+U 1 1 59DC760E
+P 5350 4400
+F 0 "D7" H 5350 4500 50  0000 C CNN
+F 1 "LED" H 5350 4300 50  0000 C CNN
+F 2 "LEDs:LED_0603" H 5350 4400 50  0001 C CNN
+F 3 "" H 5350 4400 50  0000 C CNN
+	1    5350 4400
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	3500 3700 3500 4050
+Wire Wire Line
+	3500 4000 3800 4000
+Connection ~ 3500 4000
+Wire Wire Line
+	3500 4350 3500 4400
+Wire Wire Line
+	3800 4200 3800 4400
+Connection ~ 4800 4000
+$Comp
+L C C16
+U 1 1 59DC7616
+P 5800 3250
+F 0 "C16" H 5825 3350 50  0000 L CNN
+F 1 "4.7uF" H 5825 3150 50  0000 L CNN
+F 2 "footprint:C_0603" H 5838 3100 50  0001 C CNN
+F 3 "" H 5800 3250 50  0000 C CNN
+	1    5800 3250
+	1    0    0    -1  
+$EndComp
+$Comp
+L R R27
+U 1 1 59DC7617
+P 6150 3000
+F 0 "R27" V 6230 3000 50  0000 C CNN
+F 1 "470R" V 6050 3000 50  0000 C CNN
+F 2 "footprint:R_0603" V 6080 3000 50  0001 C CNN
+F 3 "" H 6150 3000 50  0000 C CNN
+	1    6150 3000
+	1    0    0    -1  
+$EndComp
+$Comp
+L LED D8
+U 1 1 59DC7618
+P 6150 3500
+F 0 "D8" H 6150 3600 50  0000 C CNN
+F 1 "LED" H 6150 3400 50  0000 C CNN
+F 2 "LEDs:LED_0603" H 6150 3500 50  0001 C CNN
+F 3 "" H 6150 3500 50  0000 C CNN
+	1    6150 3500
+	0    -1   -1   0   
+$EndComp
+$Comp
+L R R28
+U 1 1 59DC7619
+P 8050 3450
+F 0 "R28" V 8150 3450 50  0000 C CNN
+F 1 "10K" V 7950 3450 50  0000 C CNN
+F 2 "footprint:R_0603" V 7980 3450 50  0001 C CNN
+F 3 "" H 8050 3450 50  0000 C CNN
+	1    8050 3450
+	1    0    0    -1  
+$EndComp
+$Comp
+L C C17
+U 1 1 59DC761A
+P 8300 3450
+F 0 "C17" H 8325 3550 50  0000 L CNN
+F 1 "4.7uF" H 8325 3350 50  0000 L CNN
+F 2 "footprint:C_0603" H 8338 3300 50  0001 C CNN
+F 3 "" H 8300 3450 50  0000 C CNN
+	1    8300 3450
+	1    0    0    -1  
+$EndComp
+$Comp
+L Battery BT1
+U 1 1 59DC761B
+P 8650 3450
+F 0 "BT1" H 8750 3500 50  0000 L CNN
+F 1 "Battery" H 8750 3400 50  0000 L CNN
+F 2 "Pin_Headers:Pin_Header_Angled_1x02_Pitch1.27mm" V 8650 3490 50  0001 C CNN
+F 3 "" V 8650 3490 50  0000 C CNN
+	1    8650 3450
+	1    0    0    -1  
+$EndComp
+$Comp
+L MOSFET-P U7
+U 1 1 59DC761C
+P 9100 2800
+F 0 "U7" H 9130 2920 30  0000 L CNN
+F 1 "MOSFET-P" H 9125 2685 30  0000 L CNN
+F 2 "TO_SOT_Packages_SMD:TO-252-3_TabPin2" H 9100 2750 60  0001 C CNN
+F 3 "" H 9100 2750 60  0000 C CNN
+	1    9100 2800
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	3300 3100 4300 3100
+Wire Wire Line
+	4300 3100 4300 2850
+Wire Wire Line
+	4150 2850 4600 2850
+Connection ~ 4300 2850
+Wire Wire Line
+	1600 2450 1800 2450
+Wire Wire Line
+	1800 2450 1800 2850
+$Comp
+L MCP73831-RESCUE-esp32-gateway-hw U6
+U 1 1 59DC7622
+P 7000 2950
+F 0 "U6" H 7000 2750 60  0000 C CNN
+F 1 "MCP73831" H 7000 2950 60  0000 C CNN
+F 2 "TO_SOT_Packages_SMD:TSOT-23-5" H 7000 2950 60  0001 C CNN
+F 3 "" H 7000 2950 60  0000 C CNN
+	1    7000 2950
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5800 2800 6350 2800
+Wire Wire Line
+	6150 2850 6150 2800
+Connection ~ 6150 2800
+Wire Wire Line
+	6150 3150 6150 3350
+Wire Wire Line
+	6150 3700 6350 3700
+Wire Wire Line
+	6350 3700 6350 3300
+Wire Wire Line
+	6000 2800 6000 2600
+Wire Wire Line
+	6000 2600 9100 2600
+Connection ~ 6000 2800
+Wire Wire Line
+	7700 2800 8900 2800
+Wire Wire Line
+	7700 3050 8050 3050
+Wire Wire Line
+	8050 3050 8050 3300
+Wire Wire Line
+	8300 3300 8300 2800
+Connection ~ 8300 2800
+Connection ~ 8650 2800
+Wire Wire Line
+	9300 2800 9750 2800
+$Comp
+L D_Schottky_Small D9
+U 1 1 59DC7625
+P 9550 2600
+F 0 "D9" H 9500 2680 50  0000 L CNN
+F 1 "D_Schottky_Small" V 9650 2250 50  0000 L CNN
+F 2 "Diodes_SMD:D_0603" V 9550 2600 50  0001 C CNN
+F 3 "" V 9550 2600 50  0000 C CNN
+	1    9550 2600
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	9100 2600 9100 2450
+Connection ~ 9550 2800
+Wire Wire Line
+	10050 2450 10050 2900
+$Comp
+L R R29
+U 1 1 59DC7626
+P 10050 3050
+F 0 "R29" V 10130 3050 50  0000 C CNN
+F 1 "100K" V 9950 3050 50  0000 C CNN
+F 2 "footprint:R_0603" V 9980 3050 50  0001 C CNN
+F 3 "" H 10050 3050 50  0000 C CNN
+	1    10050 3050
+	1    0    0    -1  
+$EndComp
+$Comp
+L C C18
+U 1 1 59DC7627
+P 9750 3050
+F 0 "C18" H 9775 3150 50  0000 L CNN
+F 1 "1uF" H 9775 2950 50  0000 L CNN
+F 2 "footprint:C_0603" H 9788 2900 50  0001 C CNN
+F 3 "" H 9750 3050 50  0000 C CNN
+	1    9750 3050
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	9750 2700 9750 2900
+Wire Wire Line
+	9750 3200 9750 3800
+Wire Wire Line
+	10050 3200 10050 3800
+Wire Wire Line
+	7700 3300 7700 3800
+Wire Wire Line
+	8050 3600 8050 3800
+Wire Wire Line
+	8300 3600 8300 3800
+Wire Wire Line
+	5800 2550 5800 3100
+Connection ~ 5800 2800
+Wire Wire Line
+	5800 3400 5800 3800
+Wire Wire Line
+	9100 2450 10050 2450
+Connection ~ 9550 2450
+Wire Wire Line
+	9550 2450 9550 2500
+Wire Notes Line
+	10900 3250 10900 3200
+Wire Wire Line
+	5150 4400 5200 4400
+Wire Wire Line
+	6150 3650 6150 3700
+Wire Wire Line
+	8650 3650 8650 3800
+Wire Wire Line
+	8650 3250 8650 2800
+Wire Wire Line
+	9550 2700 9550 2800
+Wire Wire Line
+	3500 2700 3500 2850
+Wire Wire Line
+	4600 4000 5150 4000
+Connection ~ 5150 4000
+Wire Wire Line
+	5150 4350 5150 4400
+Wire Wire Line
+	4800 4100 4800 4000
+Wire Wire Line
+	4800 4450 4800 4400
+Wire Wire Line
+	5150 3850 5150 4050
+Connection ~ 9750 2800
+Wire Wire Line
+	4600 2850 4600 2800
+$Comp
+L +5VD-RESCUE-esp32-gateway-hw #PWR026
+U 1 1 59DE8EA2
+P 9750 2700
+F 0 "#PWR026" H 9750 2550 50  0001 C CNN
+F 1 "+5VD" H 9750 2840 50  0000 C CNN
+F 2 "" H 9750 2700 50  0001 C CNN
+F 3 "" H 9750 2700 50  0001 C CNN
+	1    9750 2700
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND-RESCUE-esp32-gateway-hw #PWR027
+U 1 1 59DED534
+P 1450 3100
+F 0 "#PWR027" H 1450 2850 50  0001 C CNN
+F 1 "GND" H 1450 2950 50  0000 C CNN
+F 2 "" H 1450 3100 50  0001 C CNN
+F 3 "" H 1450 3100 50  0001 C CNN
+	1    1450 3100
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND-RESCUE-esp32-gateway-hw #PWR028
+U 1 1 59DED5D0
+P 2300 3600
+F 0 "#PWR028" H 2300 3350 50  0001 C CNN
+F 1 "GND" H 2300 3450 50  0000 C CNN
+F 2 "" H 2300 3600 50  0001 C CNN
+F 3 "" H 2300 3600 50  0001 C CNN
+	1    2300 3600
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND-RESCUE-esp32-gateway-hw #PWR029
+U 1 1 59DED64E
+P 3500 4400
+F 0 "#PWR029" H 3500 4150 50  0001 C CNN
+F 1 "GND" H 3500 4250 50  0000 C CNN
+F 2 "" H 3500 4400 50  0001 C CNN
+F 3 "" H 3500 4400 50  0001 C CNN
+	1    3500 4400
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND-RESCUE-esp32-gateway-hw #PWR030
+U 1 1 59DED69E
+P 3800 4400
+F 0 "#PWR030" H 3800 4150 50  0001 C CNN
+F 1 "GND" H 3800 4250 50  0000 C CNN
+F 2 "" H 3800 4400 50  0001 C CNN
+F 3 "" H 3800 4400 50  0001 C CNN
+	1    3800 4400
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND-RESCUE-esp32-gateway-hw #PWR031
+U 1 1 59DED6EE
+P 4800 4450
+F 0 "#PWR031" H 4800 4200 50  0001 C CNN
+F 1 "GND" H 4800 4300 50  0000 C CNN
+F 2 "" H 4800 4450 50  0001 C CNN
+F 3 "" H 4800 4450 50  0001 C CNN
+	1    4800 4450
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND-RESCUE-esp32-gateway-hw #PWR032
+U 1 1 59DED7F6
+P 5800 3800
+F 0 "#PWR032" H 5800 3550 50  0001 C CNN
+F 1 "GND" H 5800 3650 50  0000 C CNN
+F 2 "" H 5800 3800 50  0001 C CNN
+F 3 "" H 5800 3800 50  0001 C CNN
+	1    5800 3800
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND-RESCUE-esp32-gateway-hw #PWR033
+U 1 1 59DED874
+P 7700 3800
+F 0 "#PWR033" H 7700 3550 50  0001 C CNN
+F 1 "GND" H 7700 3650 50  0000 C CNN
+F 2 "" H 7700 3800 50  0001 C CNN
+F 3 "" H 7700 3800 50  0001 C CNN
+	1    7700 3800
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND-RESCUE-esp32-gateway-hw #PWR034
+U 1 1 59DED909
+P 8050 3800
+F 0 "#PWR034" H 8050 3550 50  0001 C CNN
+F 1 "GND" H 8050 3650 50  0000 C CNN
+F 2 "" H 8050 3800 50  0001 C CNN
+F 3 "" H 8050 3800 50  0001 C CNN
+	1    8050 3800
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND-RESCUE-esp32-gateway-hw #PWR035
+U 1 1 59DED959
+P 8300 3800
+F 0 "#PWR035" H 8300 3550 50  0001 C CNN
+F 1 "GND" H 8300 3650 50  0000 C CNN
+F 2 "" H 8300 3800 50  0001 C CNN
+F 3 "" H 8300 3800 50  0001 C CNN
+	1    8300 3800
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND-RESCUE-esp32-gateway-hw #PWR036
+U 1 1 59DED9A9
+P 8650 3800
+F 0 "#PWR036" H 8650 3550 50  0001 C CNN
+F 1 "GND" H 8650 3650 50  0000 C CNN
+F 2 "" H 8650 3800 50  0001 C CNN
+F 3 "" H 8650 3800 50  0001 C CNN
+	1    8650 3800
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND-RESCUE-esp32-gateway-hw #PWR037
+U 1 1 59DED9F9
+P 9750 3800
+F 0 "#PWR037" H 9750 3550 50  0001 C CNN
+F 1 "GND" H 9750 3650 50  0000 C CNN
+F 2 "" H 9750 3800 50  0001 C CNN
+F 3 "" H 9750 3800 50  0001 C CNN
+	1    9750 3800
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND-RESCUE-esp32-gateway-hw #PWR038
+U 1 1 59DEDABC
+P 10050 3800
+F 0 "#PWR038" H 10050 3550 50  0001 C CNN
+F 1 "GND" H 10050 3650 50  0000 C CNN
+F 2 "" H 10050 3800 50  0001 C CNN
+F 3 "" H 10050 3800 50  0001 C CNN
+	1    10050 3800
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND-RESCUE-esp32-gateway-hw #PWR039
+U 1 1 59DEDBAD
+P 5600 4500
+F 0 "#PWR039" H 5600 4250 50  0001 C CNN
+F 1 "GND" H 5600 4350 50  0000 C CNN
+F 2 "" H 5600 4500 50  0001 C CNN
+F 3 "" H 5600 4500 50  0001 C CNN
+	1    5600 4500
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5500 4400 5600 4400
+Wire Wire Line
+	5600 4400 5600 4500
+$Comp
+L GND-RESCUE-esp32-gateway-hw #PWR040
+U 1 1 59DEE6D0
+P 4300 2500
+F 0 "#PWR040" H 4300 2250 50  0001 C CNN
+F 1 "GND" H 4300 2350 50  0000 C CNN
+F 2 "" H 4300 2500 50  0001 C CNN
+F 3 "" H 4300 2500 50  0001 C CNN
+	1    4300 2500
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	4300 2500 4300 2550
+$Comp
+L GND-RESCUE-esp32-gateway-hw #PWR041
+U 1 1 59DEE7CF
+P 2750 3600
+F 0 "#PWR041" H 2750 3350 50  0001 C CNN
+F 1 "GND" H 2750 3450 50  0000 C CNN
+F 2 "" H 2750 3600 50  0001 C CNN
+F 3 "" H 2750 3600 50  0001 C CNN
+	1    2750 3600
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2750 3550 2750 3600
+Wire Wire Line
+	2300 3550 2300 3600
+$Comp
+L GND-RESCUE-esp32-gateway-hw #PWR042
+U 1 1 59DEEBBD
+P 3500 2400
+F 0 "#PWR042" H 3500 2150 50  0001 C CNN
+F 1 "GND" H 3500 2250 50  0000 C CNN
+F 2 "" H 3500 2400 50  0001 C CNN
+F 3 "" H 3500 2400 50  0001 C CNN
+	1    3500 2400
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	3500 2400 3500 2500
+$Comp
+L +5V-RESCUE-esp32-gateway-hw #PWR043
+U 1 1 59DEFB5A
+P 4600 2800
+F 0 "#PWR043" H 4600 2650 50  0001 C CNN
+F 1 "+5V" H 4600 2940 50  0000 C CNN
+F 2 "" H 4600 2800 50  0001 C CNN
+F 3 "" H 4600 2800 50  0001 C CNN
+	1    4600 2800
+	1    0    0    -1  
+$EndComp
+$Comp
+L +5V-RESCUE-esp32-gateway-hw #PWR044
+U 1 1 59DEFCBE
+P 3500 3700
+F 0 "#PWR044" H 3500 3550 50  0001 C CNN
+F 1 "+5V" H 3500 3840 50  0000 C CNN
+F 2 "" H 3500 3700 50  0001 C CNN
+F 3 "" H 3500 3700 50  0001 C CNN
+	1    3500 3700
+	1    0    0    -1  
+$EndComp
+$Comp
+L +3.3V #PWR045
+U 1 1 59DEFE5C
+P 5150 3850
+F 0 "#PWR045" H 5150 3700 50  0001 C CNN
+F 1 "+3.3V" H 5150 3990 50  0000 C CNN
+F 2 "" H 5150 3850 50  0001 C CNN
+F 3 "" H 5150 3850 50  0001 C CNN
+	1    5150 3850
+	1    0    0    -1  
+$EndComp
+$Comp
+L +5V-RESCUE-esp32-gateway-hw #PWR046
+U 1 1 59DF000D
+P 5800 2550
+F 0 "#PWR046" H 5800 2400 50  0001 C CNN
+F 1 "+5V" H 5800 2690 50  0000 C CNN
+F 2 "" H 5800 2550 50  0001 C CNN
+F 3 "" H 5800 2550 50  0001 C CNN
+	1    5800 2550
+	1    0    0    -1  
+$EndComp
+$EndSCHEMATC
