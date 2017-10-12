@@ -1,14 +1,13 @@
 EESchema-LIBRARY Version 2.3
 #encoding utf-8
 #
-# +3V3
+# +3.3V-RESCUE-esp32-gateway-hw
 #
-DEF +3V3 #PWR 0 0 Y Y 1 F P
+DEF +3.3V-RESCUE-esp32-gateway-hw #PWR 0 0 Y Y 1 F P
 F0 "#PWR" 0 -150 50 H I C CNN
-F1 "+3V3" 0 140 50 H V C CNN
+F1 "+3.3V-RESCUE-esp32-gateway-hw" 0 140 50 H V C CNN
 F2 "" 0 0 50 H I C CNN
 F3 "" 0 0 50 H I C CNN
-ALIAS +3.3V
 DRAW
 P 2 0 1 0 -30 50 0 100 N
 P 2 0 1 0 0 0 0 100 N
@@ -17,11 +16,11 @@ X +3V3 1 0 0 0 U 50 50 1 1 B N
 ENDDRAW
 ENDDEF
 #
-# +5V
+# +5V-RESCUE-esp32-gateway-hw
 #
-DEF +5V #PWR 0 0 Y Y 1 F P
+DEF +5V-RESCUE-esp32-gateway-hw #PWR 0 0 Y Y 1 F P
 F0 "#PWR" 0 -150 50 H I C CNN
-F1 "+5V" 0 140 50 H V C CNN
+F1 "+5V-RESCUE-esp32-gateway-hw" 0 140 50 H V C CNN
 F2 "" 0 0 50 H I C CNN
 F3 "" 0 0 50 H I C CNN
 DRAW
@@ -646,11 +645,11 @@ X SIM_DATA 15 900 400 200 L 40 40 1 0 B
 ENDDRAW
 ENDDEF
 #
-# SIM_Card
+# SIM_Card-RESCUE-esp32-gateway-hw
 #
-DEF SIM_Card J 0 40 Y Y 1 F N
+DEF SIM_Card-RESCUE-esp32-gateway-hw J 0 40 Y Y 1 F N
 F0 "J" -100 500 50 H V R CNN
-F1 "SIM_Card" -50 400 50 H V R CNN
+F1 "SIM_Card-RESCUE-esp32-gateway-hw" -50 400 50 H V R CNN
 F2 "" 0 350 50 H V C CNN
 F3 "" -50 0 50 H V C CNN
 $FPLIST
